@@ -6,3 +6,6 @@ router = APIRouter()
 async def read_users():
     return {"msg": "Hello World"}
 
+@router.post("/")
+async def add_users():
+    return {"user": "added"}
