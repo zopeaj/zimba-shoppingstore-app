@@ -37,3 +37,4 @@ app.dependency_overrides[get_db] = override_get_db
 
 engine = create_engine(url="sqlite:///./test.db", pool_pre_ping=False, echo=True)
 TestSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
